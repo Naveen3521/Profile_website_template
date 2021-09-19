@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+
+    <!--style css-->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function check(){
+           var Name=document.forms["myform"]["myname"].value;
+           var Age=document.forms["myform"]["myage"].value;
+           if(Name=="" && Age==""){
+                alert("Name is Empty ");
+                Name1=prompt("Please enter name");
+                document.forms["myform"]["myname"].value=Name1;
+                var Age1=prompt("Enter age");
+                document.forms["myform"]["myage"].value=Age1;
+            }
+            else if(Name==""){
+                alert("Name is Empty");
+                Name1=prompt("Please enter name");
+                document.forms["myform"]["myname"].value=Name1;
+            }
+            else if(Age==""){
+                var Age1=prompt("Enter age");
+                document.forms["myform"]["myage"].value=Age1;
+            }
+            return false;
+        }
+    </script>
+    
+</head>
+<body>
+    <!--header section-->
+    <header class="nav_bar">
+        <p id="logo">port<span>folio</span></p>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    
+    <!--main section-->
+    <section class="main">
+        <div class="main_container">
+            <img id="logo1"  src="/images/profile.png" alt="img" width="35%">
+            <h1>Hello , I'm P Naveen Prabhath<br>Web Developer </h1>   
+        </div>   
+    </section>
+
+    <!--About Section-->
+    <section class="about">
+        <h1>About</h1><br><br>
+        <div id ="vid">
+            <iframe  src="https://www.youtube.com/embed/2Gg6Seob5Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="90%" height="600vh"></iframe>
+        </div>
+        <br><br>
+        
+        <div class="padd">
+            <div class="p_container">
+                <h2>About Me:</h2>
+                <p>  
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci similique perspiciatis quis nemo suscipit, fugit nostrum natus vel mollitia facilis dolor quas animi quaerat sed, error id quasi odio unde? Sapiente quidem earum harum aperiam provident repudiandae nostrum eius quam eos? Sapiente ut ducimus perferendis sed cupiditate ab aspernatur illo. Quia facilis ad necessitatibus! Aspernatur dicta nesciunt perferendis, blanditiis aperiam placeat neque. Voluptatum hic in voluptatibus laudantium! Recusandae facilis quaerat eum officia, nulla voluptas iure neque debitis qui rem eligendi veniam facere deserunt quia quos non minima eos suscipit harum iste nesciunt repellendus provident, veritatis optio. Illum, incidunt temporibus.</p>
+            </div>
+
+            <div class="p_container">
+                <h2>Education:</h2>
+                <p>  
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci similique perspiciatis quis nemo suscipit, fugit nostrum natus vel mollitia facilis dolor quas animi quaerat sed, error id quasi odio unde? Sapiente quidem earum harum aperiam provident repudiandae nostrum eius quam eos? Sapiente ut ducimus perferendis sed cupiditate ab aspernatur illo. Quia facilis ad necessitatibus! Aspernatur dicta nesciunt perferendis, blanditiis aperiam placeat neque. Voluptatum hic in voluptatibus laudantium! Recusandae facilis quaerat eum officia, nulla voluptas iure neque debitis qui rem eligendi veniam facere deserunt quia quos non minima eos suscipit harum iste nesciunt repellendus provident, veritatis optio. Illum, incidunt temporibus.</p>
+                </div>
+
+                <div class="p_container">
+                    <h2>Skills:</h2>
+                    <ul>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul> 
+                </div>
+        </div>
+    </section>
+    <!--contact Section-->
+    <section class="contact">
+        <h1>Contact</h1>
+        <div class="padd">
+            <div class="form_container">
+                
+                <form name="myform" action="" onsubmit="check()">
+                    <label  class="lbl" for="fname">Name:</label>
+                    <input type="text" id="fname" name="myname" placeholder="Enter Your Name"><br><br>
+
+                    <label class="lbl" for="age">Age:</label>
+                    <input type="number" id="age" name="myage" placeholder="Enter Age"><br><br>
+
+                    <label class="lbl">Gender:</label>
+                    <input type="radio" name="gender" id="male">
+                    <label class="lbl" for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female">
+                    <label class="lbl" for="female">Female</label>
+
+                    <input type="radio" name="gender" id="other">
+                    <label class="lbl" for="other">Other</label><br><br>
+
+                    <input type="checkbox" id="agree">
+                    <label class="lbl" for="agree">I Agree</label><br><br>
+
+                    <input  id="submit" type="submit">
+                </form>
+            </div>
+        </div>
+        <div class="map">
+            <iframe width="90%" height="400vh" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8000.647393030872!2d77.64286720232639!3d13.071127819517182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1632034914836!5m2!1sen!2sin"      style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div> 
+        
+
+
+    </section>
+
+    <footer class="footer">
+        <p>Designed By P Naveen Prabhth</p> 
+        
+    </footer>
+
+
+</body>
+</html>
